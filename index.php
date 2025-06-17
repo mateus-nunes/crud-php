@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['logado']) and $_SESSION['logado']) {
-    header("Location: area_restrita.php");
+    header("Location: list.php");
 }
 ?>
 <!DOCTYPE html>

@@ -33,8 +33,13 @@ if (!$user) {
     <main class="container">
         <h1 class="text-center">Visualização de usuário</h1>
         <h3 class="text-center"><?php echo $user->name; ?></h3>
-        <img src="<?php echo User::getPathPhoto($user->image); ?>" style="max-width: 300px;" class="rounded mx-auto d-block" alt="Foto do usuário: <?php echo $user->name;?>" />
+        <img src="<?php echo User::getPathPhoto($user->image); ?>" style="max-width: 300px;"
+            class="rounded mx-auto d-block" alt="Foto do usuário: <?php echo $user->name; ?>" />
         <h4 class="text-center">Email: <?php echo $user->mail; ?></h4>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="list.php" class="btn btn-primary mt-4">Voltar</a>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

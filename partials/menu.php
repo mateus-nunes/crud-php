@@ -13,6 +13,9 @@
           <a class="nav-link" href="list.php">Usuários</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="admin.php">Área Administrativa</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="logout.php">Logout</a>
         </li>
       </ul>

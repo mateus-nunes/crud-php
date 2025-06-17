@@ -19,7 +19,7 @@ if (isset($_POST['email'])) {
             $_SESSION['user_id'] = $user->id;
             $_SESSION['role'] = $user->role;
 
-            header("Location: area_restrita.php");
+            header("Location: list.php");
         } else {
             die("Credenciais inválidas");
         }

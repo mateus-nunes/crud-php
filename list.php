@@ -1,6 +1,6 @@
 <?php
-require_once  __DIR__ . "/Classes/User.php"
-?>
+require_once __DIR__ . "/Classes/User.php"
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,8 +30,7 @@ require_once  __DIR__ . "/Classes/User.php"
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th> </th>
-                    <th> </th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,9 +44,11 @@ require_once  __DIR__ . "/Classes/User.php"
                         <td><?php echo $user->id; ?></td>
                         <td><?php echo $user->name; ?></td>
                         <td><?php echo $user->mail; ?></td>
-                        <td><a href="update.php?id=<?php echo $user->id; ?>">Editar</a></td>
-                        <td><a href="delete.php?id=<?php echo $user->id; ?>">Apagar</a></td>
-                        <td><a href="visualize.php?id=<?php echo $user->id; ?>">Visualizar</a></td>
+                        <td>
+                            <a class="btn btn-primary" href="update.php?id=<?php echo $user->id; ?>">Editar</a>
+                            <a class="btn btn-danger" href="delete.php?id=<?php echo $user->id; ?>">Apagar</a>
+                            <a class="btn btn-secondary" href="visualize.php?id=<?php echo $user->id; ?>">Visualizar</a>
+                        </td>
                     </tr>
                     <?php
                 }
